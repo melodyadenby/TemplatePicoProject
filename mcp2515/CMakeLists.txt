@@ -1,0 +1,5 @@
+include_directories(${PWD})
+add_library(mcp2515 STATIC mcp2515.h)
+#add_executable(mcp2515 mcp2515.c)
+target_link_libraries(pico_stdlib)
+set_target_properties(mcp2515 PROPERTIES LINKER_LANGUAGE CXX)
